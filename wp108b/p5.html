@@ -1,0 +1,156 @@
+<!DOCTYPE html>  <!--HTML-->
+<html lang="zh-Hant-TW">  <!--標註為繁體中文語系-->
+    <title>
+        林元璽的個人網站
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devide-width,initial-scale=1">  <!--隨裝置改變解析度-->
+    <meta name="auther" content="林元璽 ">  <!--作者-->
+    <head>
+        <style>
+            /*CSS*/
+            h1{
+                background-color: rgba(0, 0, 0, 0.6);
+                color: white;
+                text-align:center;
+                font-family: 標楷體;
+            }
+            table{
+                border: 1px solid white;
+                color: white;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 100px;
+            }
+            td,th{
+                background-color: rgba(255, 255, 255, 0.4);
+                border: 1px solid white;
+                color: black;
+                padding: 5px;
+                text-align: center;
+                width: auto;
+                vertical-align: middle;
+                text-align: center;
+            }
+            body{
+                font-family: 標楷體;
+                background-image: url(20160127184239_Eey3R.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .sidebar{
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: black;
+                overflow-x: hidden;
+                padding-top: 60px;
+                transition: 0.5s;
+            }
+            .sidebar a{
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: gray;
+                display: block;
+                transition: 0.3s;
+            }
+            .sidebar a:hover{
+                color: white;
+            }
+            .sidebar .close{
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 60px;
+            }
+            #main{
+                transition: margin-left .5s;
+                padding: 20px;
+            }
+            @media screen and (max-height: 450px){
+                .sidebar{
+                    padding-top: 15px;
+                }
+                .sidebar a{
+                    font-size: 18px;
+                }
+            }
+            .Menu{
+                overflow: hidden;
+                font-family: 標楷體;
+                position: absolute;
+                top: 20px;
+                left: 70px;
+            }
+            .Menu a{
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .Menu a:hover{
+                background-color: red;
+            }
+        </style>
+        <h1>My game list</h1>
+    </head>
+    
+    <body>
+        <audio src="FE風花雪月 - The Edge of Dawnフレスベルグの少女～風花雪月～ [JPNROM KAN Lyrics].mp3" controls>
+            <h3>不支援的瀏覽器</h3>  <!--遇到不支援瀏覽器會跳出-->
+        </audio> 
+        
+        <div id="Sidebar" class="sidebar">
+            <a href="javascript: void(0)" class="close" onclick="closeNav()">&times;</a>
+            <a href="https://www.facebook.com/profile.php?id=100003275699229">facebook</a>
+            <a href="https://github.com/yuanxiii">GitHub</a>
+            <a href="交友版.html">交友版</a>
+            <p style="font-size: 10px; color: white;">Phone number: 0971223919</p>
+            <p style="font-size: 10px; color: white;">Email:  lin20001121@gmail.com</p>
+        </div>
+        <span style="font-size: 30px; cursor: pointer; color: white; position: absolute; top: 25px; left: 30px;" onclick="openNav()">☰</span>
+        <span class="Menu"><a href="期中.html">個人介紹</a></span>
+        <script>  //Javascript
+            function openNav(){
+                document.getElementById("Sidebar").style.width="250px";
+            }
+            function closeNav(){
+                document.getElementById("Sidebar").style.width="0";
+            }
+        </script>
+        <div style="width:100px;position: absolute;top: 20%;right:80%">
+            <a href="http://persona5.jp/" title="Persona 5 Royal官網"><img style="width:300%" src="1.jpg" width="200" height="180"  border="0"></a><!--因為少部份瀏覽器（如 IE）會自動把超連結圖片加上外框，變得很難看-->
+            <br>
+            <p style="color: white;position: absolute;top: 100%">Persona 5 Royal</p>
+          </div>
+          <div style="width:100px;position: absolute;top: 20%;right:55%">
+            <a href="https://www.smashbros.com/TC/" title="任天堂全明星大亂鬥官網"><img style="width:300%" src="2.jpg" width="200" height="180" border="0"></a>
+            <p style="color: white;position: absolute;top: 100%">任天堂全明星大亂鬥</p>
+          </div>
+          <div  style="width:100px;position: absolute;top: 20%;right:30%">
+            <a href="https://www.nintendo.tw/switch/zelda_botw/index.html" title="賽爾達傳說 曠野之息官網"></c><img style="width:300%" src="3.jpg" width="200" height="180"border="0"></a>
+            <p style="color: white;position: absolute;top: 100%">賽爾達傳說 曠野之息</p>
+          </div>
+          <div style="width:300px;position: absolute;top: 60%;right:68%">
+            <a href="https://www.nintendo.com.hk/switch/fire_emblem_three_houses/pc/index.html?nt_redirect_referrer=https%3A%2F%2Fwww.google.com%2F&rd" title="聖火降魔錄 風花雪月 曠野之息官網"><img style ="width: 100%" src="4.png"border="0"></a>
+            <p style="color: white;position: absolute;top: 100%">聖火降魔錄 風花雪月</p>
+          </div>
+          
+          <div style="width:225px;position: absolute;top: 60%;right:47.5%">
+            <a href="https://game.portal-pokemon.com/sword_shield/tc/" title="寶可夢 劍盾官網"><img style="width: 100% height=100%" src="5.jpg"width="360" height="180"border="0"></a>
+            <p style="color: white;;position: absolute;top:100%;">寶可夢 劍盾</p>
+          </div>
+          <div style="width:250px;position: absolute;top: 60%;right:20%">
+            <a href="https://asia.sega.com/shin-sakura/cht/" title="新 櫻花大戰官網"><img style="width: 100% height=100%" src="6.jpg"width="360" height="180"border="0"></a>
+            <p style="color: white ;position: absolute;top: 100%;">新 櫻花大戰</p>
+           
+          
+    </body>
+</html>
