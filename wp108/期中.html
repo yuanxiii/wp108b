@@ -13,14 +13,14 @@
             body {font-family: Verdana,sans-serif;}
             .mySlides {display:none}
             
-            /* 幻灯片空間 */
+            /* 幻燈片的空間 */
             .slideshow-container {
             max-width: 800px;
             position: relative;
             margin: auto;
             }
             
-            /* 下一张 & 上一张 按钮 */
+            /* 上、下張的按鈕 */
             .prev, .next {
             cursor: pointer;
             position: absolute;
@@ -35,7 +35,7 @@
             border-radius: 0 3px 3px 0;
             }
             
-            /* 定位 "下一张" 按钮靠右 */
+            /* 定位下一張的按鈕 */
             .next {
             right: 0;
             border-radius: 3px 0 0 3px;
@@ -46,7 +46,7 @@
             background-color: rgba(0,0,0,0.8);
             }
             
-            /* 标题文本 */
+            /* 標題的字 */
             .text {
             color: #f2f2f2;
             font-size: 15px;
@@ -57,7 +57,7 @@
             text-align: center;
             }
             
-            /* 数字文本 (1/3、2/3 等) */
+            /* 顯示第幾張 (1/3、2/3 等) */
             .numbertext {
             color: #f2f2f2;
             font-size: 12px;
@@ -66,7 +66,7 @@
             top: 0;
             }
             
-            /* 标记符号 */
+            /* 標記符號 */
             .dot {
             cursor:pointer;
             height: 13px;
@@ -82,7 +82,7 @@
             background-color: #717171;
             }
             
-            /* 淡出动画 */
+            /* 淡出動畫 */
             .fade {
             -webkit-animation-name: fade;
             -webkit-animation-duration: 1.5s;
@@ -199,7 +199,7 @@
             ⇈  判斷現在是用pc端瀏覽器還是移動端離覽器。
            
             <hr>
-            <script>
+            <script>//移動orPC
                 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
                     document.write ("移动")
                 } else {
@@ -292,7 +292,7 @@
         </div>
         <span style="font-size: 30px; cursor: pointer; color: white; position: absolute; top: 25px; left: 30px;" onclick="openNav()">☰</span>
         <span class="Menu"><a href="p5.html">My game list</a></span>
-        <script>  //Javascript移動orPC
+        <script>  //Javascript
         var slideIndex = 1;
             showSlides(slideIndex);
             
