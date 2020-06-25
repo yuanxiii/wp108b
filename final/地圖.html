@@ -1,0 +1,56 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+</head>
+<body onload="Shop.start()">
+<header>
+  <div class="navbar" style="float:left">
+    <a onclick="Ui.openNav()" style="cursor:pointer">&#9776;</a>
+  </div>
+  <div class="navbar" style="float:right">
+    <div class="dropdown">
+      <button class="dropbtn">
+        <i class="fa fa-user"></i>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="login.html">登入</a>
+        <a href="#logout">登出</a>
+        <a href="signup.html">註冊</a>
+      </div>
+    </div>
+    <a href="#Shop" id="menuShopName">店名</a>
+  </div>
+</header>
+<aside>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="Ui.closeNav()">&times;</a>
+    <a href="公告.html">公告資訊</a>
+    <a href="message.html">發訊息給商店</a>
+    <a href="地圖.html">商店地圖</a>
+    <a href="index.html">開始訂餐</a>
+  </div>
+</aside>
+<main>
+  <div id="main" class="table" style="text-align:center">
+  </div>
+</main>
+<body>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.075956839459!2d118.32034631499482!3d24.448149884250082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3414a25f9967e56f%3A0xf1c093a50b7e8ba6!2z5ZyL56uL6YeR6ZaA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1593112298889!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</body>
+
+<footer>
+</footer>
+<script src="Shop.js"></script>
+<script src="Report.js"></script>
+<script src="Setting.js"></script>
+<script src="Lib.js"></script>
+<script src="Ui2.js"></script>
+
+
+</body>
+</html>
